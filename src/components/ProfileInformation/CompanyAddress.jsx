@@ -56,7 +56,12 @@ function CompanyAddress() {
                     defaultValue={Address[0].value}
                     variant='standard'
                     fullWidth
-                    select >
+                    select
+                    slotProps={{
+                        select: {
+                          native: true,
+                        },
+                      }}>
                     {Address.map((option) => (
                         <option key={option.value} value={option.value}>
                             {option.label}
@@ -71,7 +76,12 @@ function CompanyAddress() {
                     defaultValue={Address[1].value}
                     variant='standard'
                     fullWidth
-                    select  >
+                    select
+                    slotProps={{
+                        select: {
+                          native: true,
+                        },
+                      }}>
                     {Address.map((option) => (
                         <option key={option.value} value={option.value}>
                             {option.label}
@@ -86,7 +96,12 @@ function CompanyAddress() {
                     defaultValue={Address[2].value}
                     variant='standard'
                     fullWidth
-                    select  >
+                    select
+                    slotProps={{
+                        select: {
+                          native: true,
+                        },
+                      }}>
                     {Address.map((option) => (
                         <option key={option.value} value={option.value}>
                             {option.label}
